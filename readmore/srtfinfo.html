@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SRTF DESCRIPTION</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/mainstyle.css">
+   
+  </head>
+  <body>
+    <div class="mid">
+      <a href="/index.html" style="color: aliceblue; text-decoration: none;" ><h1>SHORTEST REMAINING TIME FIRST</h1></a>
+        
+    </div>
+
+    <h2>
+What is SRTF Method?
+</h2>
+    <p>This Algorithm is the preemptive version of SJF scheduling. In SRTF, the execution of the process can be stopped after certain amount of time. At the arrival of every process, the short term scheduler schedules the process with the least remaining burst time among the list of available processes and the running process.</p>
+    <p>Once all the processes are available in the ready queue, No preemption will be done and the algorithm will work as SJF scheduling. The context of the process is saved in the Process Control Block when the process is removed from the execution and the next process is scheduled. This PCB is accessed on the next execution of this process.</p>
+
+
+
+<h2>Advantages of SRTF</h2>
+<p>SRTF algorithm makes the processing of the jobs faster than SJN algorithm, given it’s overhead charges are not counted.</p>
+
+<h2>Disadvantages of SRTF</h2>
+<p>The context switch is done a lot more times in SRTF than in SJN, and consumes CPU’s valuable time for processing. This adds up to it’s processing time and diminishes it’s advantage of fast processing.</p>
+
+<h2>Limitations</h2>
+<li>Like shortest job next scheduling, shortest remaining time scheduling is rarely used outside of specialized environments because it requires accurate estimates of the runtime of each process.</li>
+  </body>
+
+</html>

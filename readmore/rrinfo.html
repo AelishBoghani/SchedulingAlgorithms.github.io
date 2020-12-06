@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>FCFS DESCRIPTION</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/mainstyle.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="mid">
+        <a href="/index.html" style="color: aliceblue; text-decoration: none;" ><h1>Round Robin</h1></a>
+
+    </div>
+    <header class="main">
+
+
+        <h2 class="head">
+            What is Round-Robin Scheduling?
+        </h2>
+        <p>The name of this algorithm comes from the round-robin principle, where each person gets an equal share of
+            something in turns. It is the oldest, simplest scheduling algorithm, which is mostly used for multitasking.
+        </p>
+        <p>In Round-robin scheduling, each ready task runs turn by turn only in a cyclic queue for a limited time slice.
+            This algorithm also offers starvation free execution of processes.</p>
+
+        <h2 class="head">Characteristics of FCFS method</h2>
+        <li>It supports non-preemptive and pre-emptive scheduling algorithm.</li>
+        <li>Jobs are always executed on a first-come, first-serve basis.</li>
+        <li>It is easy to implement and use.</li>
+        <li>This method is poor in performance, and the general wait time is quite high.</li>
+
+
+
+
+        <h2 class="head">Advantage of Round-robin Scheduling</h2>
+
+        <ul>
+            <li>It doesn't face the issues of starvation or convoy effect.</li>
+            <li>All the jobs get a fair allocation of CPU.</li>
+            <li>It deals with all process without any priority </li>
+            <li>If you know the total number of processes on the run queue, then you can also assume the worst-case
+                response time for the same process.</li>
+            <li>This scheduling method does not depend upon burst time. That's why it is easily implementable on the
+                system. </li>
+            <li>Once a process is executed for a specific set of the period, the process is preempted, and another
+                process executes for that given time period.</li>
+            <li>Allows OS to use the Context switching method to save states of preempted processes.</li>
+            <li>It gives the best performance in terms of average response time. </li>
+        </ul>
+
+        <h2 class="head"></a>Disadvantages of Round-robin Scheduling</h2>
+        <ul>
+            <li>If slicing time of OS is low, the processor output will be reduced. </li>
+            <li>This method spends more time on context switching</li>
+            <li>Its performance heavily depends on time quantum.</li>
+            <li>Priorities cannot be set for the processes.</li>
+            <li>Round-robin scheduling doesn't give special priority to more important tasks.</li>
+            <li>Decreases comprehension </li>
+            <li>Lower time quantum results in higher the context switching overhead in the system.</li>
+            <li>Finding a correct time quantum is a quite difficult task in this system.</li>
+        </ul>
+
+        <h2 class="head">Summary:</h2>
+        <ul>
+            <li>The name of this algorithm comes from the round-robin principle, where each person gets an equal share
+                of something in turns.</li>
+            <li>Round robin is one of the oldest, fairest, and easiest algorithms and widely used scheduling methods in
+                traditional OS.</li>
+            <li>Round robin is a pre-emptive algorithm</li>
+            <li>The biggest advantage of the round-robin scheduling method is that If you know the total number of
+                processes on the run queue, then you can also assume the worst-case response time for the same process.
+            </li>
+            <li>This method spends more time on context switching</li>
+            <li>Worst-case latency is a term used for the maximum time taken for the execution of all the tasks.</li>
+        </ul>
+    </header>
+</body>
+
+</html>

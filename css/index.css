@@ -1,0 +1,27 @@
+.navbar{
+    background-color: rgb(103, 101, 238);
+    /* border: 2px solid red; */
+}
+#logo{
+    width: 20%;
+    /* border: 3px solid red; */
+}
+.nav-link{
+    margin: 8px;
+    padding: 8px;
+}
+body{
+    background: lightblue url(/images/tech2.jpg);
+    
+    
+    
+
+}
+@media (min-width: 768px) and (max-width: 1000px) {
+    .collapse {
+        display: none !important;
+    }
+ }
+
+
+

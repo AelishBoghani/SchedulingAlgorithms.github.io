@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>LJF DESCRIPTION</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/mainstyle.css">
+  
+  </head>
+  <body>
+    <div class="mid">
+      <a href="/index.html" style="color: aliceblue; text-decoration: none;" ><h1>Longest Job First</h1></a>
+    </div>
+
+    <h2>
+What is LJF Method?
+</h2>
+    <p>Longest Job First (LJP) is a non-preemptive scheduling algorithm. This algorithm is based upon the burst time of the processes. The processes are put into the ready queue based on their burst times i.e., in a descending order of the burst times. As the name suggests this algorithm is based upon the fact that the process with the largest burst time is processed first. The burst time of only those processes is considered that have arrived in the system until that time.</p>
+    
+<h2>Procedure of LJF method</h2>
+<li>Step-1:First, sort the processes in increasing order of their Arrival Time.</li>
+<li>Step-2:Choose the process having highest Burst Time among all the processes that have arrived till that time. Then process it for its burst time. Check if any other process arrives until this process completes execution.</li>
+<li>Step-3:Repeat the above both steps until all the processes are executed.</li>
+
+
+<h2>Note</h2>
+<p>If two processes have the same burst time then the tie is broken using FCFS i.e., the process that arrived first is processed first.</p>
+
+<h2>Disadvantages of LJF</h2>
+<li>This algorithm gives very high average waiting time and average turn-around time for a given set of processes.</li>
+<li>This may lead to convoy effect.</li>
+<li>It may happen that a short process may never get executed and the system keeps on executing the longer processes.</li>
+<li>It reduces the processing speed and thus reduces the efficiency and utilization of the system.</li>
+
+  </body>
+
+</html>

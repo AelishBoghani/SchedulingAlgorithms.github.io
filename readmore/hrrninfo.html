@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HRRN DESCRIPTION</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/mainstyle.css">
+    
+  </head>
+  <body>
+    <div class="mid">
+      <a href="/index.html" style="color: aliceblue; text-decoration: none;" ><h1>Highest Response Ratio Next</h1></a>
+        
+    </div>
+
+    <h2>
+What is HRRN Method?
+</h2>
+    <p>Given n processes with their Arrival times and Burst times, the task is to find average waiting time and average turn around time using HRRN scheduling algorithm.</P>
+    <P>The name itself states that we need to find the response ratio of all available processes and select the one with the highest Response Ratio. A process once selected will run till completion.</p>
+    <p>Criteria – Response Ratio</p>
+    <p>Mode – Non-Preemptive</p>
+    <p>Response Ratio = (W + S)/S</p>
+    <p>Here, W is the waiting time of the process so far and S is the Burst time of the process.</p>
+    <p>Performance of HRRN</p>
+    <li>Shorter Processes are favoured.</li>
+    <li>Aging without service increases ratio, longer jobs can get past shorter jobs.</li>
+
+<h2>Procedure of HRRN method</h2>
+<li>It starts.</li>
+<li>It only consider the processes with Arrival time, Burst Time and priority.</li>
+<li>It fills the ready Queue according to arrival times.</li>
+<li>Highest hybrid priority process is executed first using formula Hp = 0.5 * Ep + 0.5 * R</li>
+<li>Steps 4 and 5 repeated until queue becomes empty.</li>
+<li>Now, Calculate average waiting time, average turnaround time, number of context switches.</li>
+<li>It stop.</li>
+
+
+<h2>Advantages of HRRN</h2>
+<li>It is Non-preemptive.</li>
+<li>It prevents indefinite postponement (process of starvation).</li>
+<li>It improves the performance of shortest process first scheduling.</li>
+<li>It considers how long process has been waiting and increases its priority.</li>
+
+<h2>Disadvantages of HRRN</h2>
+<li>Burst time of the processes can not be known in advance so it can not be implemented practically.</li>
+<li>Processes are scheduled by internal priority system because it does not support external priority system.</li>
+
+  </body>
+
+</html>

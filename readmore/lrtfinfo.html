@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>LRTF DESCRIPTION</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/mainstyle.css">
+   
+  </head>
+  <body>
+    <div class="mid">
+      <a href="/index.html" style="color: aliceblue; text-decoration: none;" > <h1>Longest Remaining Time First</h1></a>
+       
+    </div>
+
+    <h2>
+What is LRTF Method?
+</h2>
+    <p>This is a pre-emptive version of Longest Job First (LJF) scheduling algorithm. In this scheduling algorithm, we find the process with the maximum remaining time and then process it. We check for the maximum remaining time after some interval of time(say 1 unit each) to check if another process having more Burst Time arrived up to that time.</p>
+
+<h2>Procedure of LRTF method</h2>
+<li>Step-1: First, sort the processes in increasing order of their Arrival Time.</li>
+<li>Step-2: Choose the process having least arrival time but with most Burst Time. Then process it for 1 unit. Check if any other process arrives upto that time of execution or not.</li>
+<li>Step-3: Repeat the above both steps until execute all the processes.</li>
+    
+<h2>Characteristics of LRTF method</h2>
+<li>Longest Remaining Time First is a CPU scheduling algorithm used to determine the process to be executed first among all the incoming processes in a systematic way.</li>
+<li>It follows the preemptive approach i.e. CPU is allocated only for a fixed slice of time.</li>
+<li>The criteria for process selection is highest burst size and this process runs till the fixed slice. The selection process takes place again.</li>
+<li>This is not an optimal scheduling algorithm as the average waiting time is high.</li>
+
+
+<h2>Advantages of LRTF</h2>
+<li>LRTF algorithm is simple and easy to implement.</li>
+<li>Almost all the processes complete by the time the longest job reaches its completion.</li>
+<li>Starvation-free as all processes get fair share of CPU.</li>
+
+<h2>Disadvantages of LRTF</h2>
+<li>The context switch consumes CPU’s valuable time which can be utilized for executing processes.</li>
+<li>Smaller processes need to wait for CPU to finish larger burst size processes.</li>
+<li>The average waiting time and average turn-around time are much high even with much less burst time of each process.</li>
+
+  </body>
+
+</html>

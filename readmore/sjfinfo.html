@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>FCFS DESCRIPTION</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/mainstyle.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="mid">
+        <a href="/index.html" style="color: aliceblue; text-decoration: none;" ><h1>Shortest Job First</h1></a>
+        
+    </div>
+    <header class="main">
+
+
+        <h2 class="head">
+            What is Shortest Job First Scheduling?
+        </h2>
+        <p>Shortest Job First (SJF) is an algorithm in which the process having the smallest execution time is chosen
+            for the next execution. This scheduling method can be preemptive or non-preemptive. It significantly reduces
+            the average waiting time for other processes awaiting execution. The full form of SJF is Shortest Job First.
+        </p>
+
+        <h2 class="head">Characteristics of SJF Scheduling</h2>
+        <li>It is associated with each job as a unit of time to complete.</li>
+        <li>This algorithm method is helpful for batch-type processing, where waiting for jobs to complete is not
+            critical.</li>
+        <li>It can improve process throughput by making sure that shorter jobs are executed first, hence possibly have a
+            short turnaround time.</li>
+        <li>It improves job output by offering shorter jobs, which should be executed first, which mostly have a shorter
+            turnaround time.</li>
+
+
+
+
+        <h2 class="head">Advantages of SJF</h2>
+        <p>Here are the benefits/pros of using SJF method:</p>
+        <li>SJF is frequently used for long term scheduling.</li>
+        <li>It reduces the average waiting time over FIFO (First in First Out) algorithm.</li>
+        <li>SJF method gives the lowest average waiting time for a specific set of processes.</li>
+        <li>It is appropriate for the jobs running in batch, where run times are known in advance.</li>
+        <li>For the batch system of long-term scheduling, a burst time estimate can be obtained from the job
+            description.</li>
+        <li>For Short-Term Scheduling, we need to predict the value of the next burst time.</li>
+        <li>Probably optimal with regard to average turnaround time.</li>
+
+        <h2 class="head">Disadvantages/Cons of SJF</h2>
+        <p>Here are some drawbacks/cons of SJF algorithm:</p>
+        <li>Job completion time must be known earlier, but it is hard to predict.</li>
+        <li>It is often used in a batch system for long term scheduling.</li>
+        <li>SJF can't be implemented for CPU scheduling for the short term. It is because there is no specific method to
+            predict the length of the upcoming CPU burst.</li>
+        <li>This algorithm may cause very long turnaround times or starvation.
+        <li>Requires knowledge of how long a process or job will run.</li>
+        <li>It leads to the starvation that does not reduce average turnaround time.</li>
+        <li>It is hard to know the length of the upcoming CPU request.</li>
+        <li>Elapsed time should be recorded, that results in more overhead on the processor.</li>
+
+        <h2 class="head">Summary:</h2>
+        <li>SJF is an algorithm in which the process having the smallest execution time is chosen for the next
+            execution. </li>
+        <li>SJF Scheduling is associated with each job as a unit of time to complete. </li>
+        <li>This algorithm method is helpful for batch-type processing, where waiting for jobs to complete is not
+            critical. </li>
+        <li>There are basically two types of SJF methods 1) Non-Preemptive SJF and 2) Preemptive SJF. </li>
+        <li>In non-preemptive scheduling, once the CPU cycle is allocated to process, the process holds it till it
+            reaches a waiting state or terminated. </li>
+        <li>In Preemptive SJF Scheduling, jobs are put into the ready queue as they come. </li>
+        <li>Although a process with short burst time begins, the current process is removed or preempted from execution,
+            and the job which is shorter is executed 1st. </li>
+        <li>SJF is frequently used for long term scheduling. </li>
+        <li>It reduces the average waiting time over FIFO (First in First Out) algorithm. </li>
+        <li>In SJF scheduling, Job completion time must be known earlier, but it is hard to predict. </li>
+        <li>SJF can't be implemented for CPU scheduling for the short term. It is because there is no specific method to
+            predict the length of the upcoming CPU burst. </li>
+    </header>
+    <br>
+    
+</body>
+
+</html>
